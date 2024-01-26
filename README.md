@@ -1,16 +1,18 @@
-# Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation (CVPR 2023)
-by Yunhao Bai, Duowen Chen, Qingli Li, Wei Shen, and Yan Wang.
+# Overlay Left Atrium Mantle-Free for Semi-Supervised Medical Image Segmentation
+by Jiacheng Liu[0009−0000−3354−6139], Wenhua Qian, Jinde Cao and Peng Liu.
+[fig1.pdf](https://github.com/vigilliu/OMF/files/14062173/fig1.pdf)
+[fig2.pdf](https://github.com/vigilliu/OMF/files/14062175/fig2.pdf)
+
 ## Introduction
-Official code for "[Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation](https://arxiv.org/abs/2305.00673)". (CVPR 2023)
+Official code for "[Overlay Left Atrium Mantle-Free for Semi-Supervised Medical Image Segmentation](https://arxiv.org/)".
 ## Requirements
 This repository is based on PyTorch 1.8.0, CUDA 11.1 and Python 3.6.13. All experiments in our paper were conducted on NVIDIA GeForce RTX 3090 GPU with an identical experimental setting.
-## News
-We provide NIH-Pancreas dataset codes `code/pancreas`, data split (and other information) could be got at [CoraNet](https://github.com/koncle/CoraNet)
 ## Usage
-We provide `code`, `data_split` and `models` for LA and ACDC dataset.
+Data could be got at [LA](https://github.com/yulequan/UA-MT/tree/master/data).
 
-Data could be got at [LA](https://github.com/yulequan/UA-MT/tree/master/data) and [ACDC](https://github.com/HiLab-git/SSL4MIS/tree/master/data/ACDC).
-
+[fig3.pdf](https://github.com/vigilliu/OMF/files/14062177/fig3.pdf)
+<img width="654" alt="截屏2024-01-26 16 45 52" src="https://github.com/vigilliu/OMF/assets/129838909/5bf7713e-3bb2-4064-8800-397e126246e8">
+<img width="890" alt="截屏2024-01-26 16 46 19" src="https://github.com/vigilliu/OMF/assets/129838909/855c96e6-1d1a-47e2-998b-1eb85c0373af">
 
 To train a model,
 ```
@@ -24,29 +26,11 @@ python ./code/test_LA.py --exp=OMF_lab8 --labelnum=8 #for LA testing
 python ./code/test_LA.py --exp=OMF_lab16 --labelnum=16 #for LA testing
 ```
 
-## Citation
-
-If you find these projects useful, please consider citing:
-
-```bibtex
-@article{DBLP:journals/corr/abs-2305-00673,
-  author       = {Yunhao Bai and
-                  Duowen Chen and
-                  Qingli Li and
-                  Wei Shen and
-                  Yan Wang},
-  title        = {Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation},
-  journal      = {CoRR},
-  volume       = {abs/2305.00673},
-  year         = {2023}
-}
-```
-
 ## Acknowledgements
-Our code is largely based on [SS-Net](https://github.com/ycwu1997/SS-Net). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
+Our code is largely based on [BCP:Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation]. Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
 ## Questions
-If you have any questions, welcome contact me at 'yhbai@stu.ecnu.edu.cn'
+If you have any questions, welcome contact me at '.edu.cn'
 
 
 
