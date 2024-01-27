@@ -6,7 +6,7 @@ by Jiacheng Liu[0009−0000−3354−6139], Wenhua Qian, Jinde Cao and Peng Liu.
 Official code for "[Overlay Left Atrium Mantle-Free for Semi-Supervised Medical Image Segmentation](https://arxiv.org/)".
 
 ## Overview of our method
-<img width="1017" alt="截屏2024-01-26 16 52 10" src="https://github.com/vigilliu/OMF/assets/129838909/9ddc8c07-cf38-4e4f-8c34-e01ca2fb1a3d">
+<img width="1053" alt="截屏2024-01-27 23 18 13" src="https://github.com/vigilliu/OMF/assets/129838909/bb78ecb5-4635-4dc8-9aab-615cf1493677">
 
 ## Requirements
 This repository is based on PyTorch 1.8.0, CUDA 11.1 and Python 3.6.13. All experiments in our paper were conducted on NVIDIA GeForce RTX 3090 GPU with an identical experimental setting.
