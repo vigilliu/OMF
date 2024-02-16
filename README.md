@@ -1,5 +1,5 @@
 # Overlay Left Atrium Mantle-Free for Semi-Supervised Medical Image Segmentation
-by Jiacheng Liu[0009−0000−3354−6139], Wenhua Qian, Jinde Cao and Peng Liu.
+by **************************************.
 <img width="1483" alt="截屏2024-01-26 16 51 23" src="https://github.com/vigilliu/OMF/assets/129838909/9eacab39-29ae-43af-b0e9-c03b21de8c76">
 
 ## Introduction
