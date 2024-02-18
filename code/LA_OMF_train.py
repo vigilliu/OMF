@@ -28,7 +28,7 @@ from torch.autograd import Variable
 from utils import losses, ramps, feature_memory, contrastive_losses, test_3d_patch
 from dataloaders.dataset import *
 from networks.net_factory import net_factory
-from utils.BCP_utils import context_mask, mix_loss, parameter_sharing, update_ema_variables , vigil_loss
+from utils.OMF_utils import context_mask, mix_loss, parameter_sharing, update_ema_variables , vigil_loss
 #vigil
 import matplotlib.pyplot as plt
 
