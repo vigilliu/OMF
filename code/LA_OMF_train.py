@@ -33,8 +33,8 @@ from utils.OMF_utils import context_mask, mix_loss, parameter_sharing, update_em
 import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--root_path', type=str, default='/home/vigil/Desktop/BCP-main/data/byh_data/SSNet_data/LA', help='Name of Dataset')
-parser.add_argument('--exp', type=str,  default='BCP', help='exp_name')
+parser.add_argument('--root_path', type=str, default='/home/vigil/Desktop/OMF-main/data/byh_data/SSNet_data/LA', help='Name of Dataset')
+parser.add_argument('--exp', type=str,  default='OMF', help='exp_name')
 parser.add_argument('--model', type=str, default='VNet', help='model_name')
 parser.add_argument('--pre_max_iteration', type=int,  default=15000, help='maximum pre-train iteration to train')
 parser.add_argument('--self_max_iteration', type=int,  default=15000, help='maximum self-train iteration to train')
@@ -49,7 +49,7 @@ parser.add_argument('--seed', type=int,  default=1337, help='random seed')
 parser.add_argument('--consistency', type=float, default=1.0, help='consistency')
 parser.add_argument('--consistency_rampup', type=float, default=40.0, help='consistency_rampup')
 parser.add_argument('--magnitude', type=float,  default='10.0', help='magnitude')
-# -- setting of BCP
+# -- setting of OMF
 parser.add_argument('--u_weight', type=float, default=0.5, help='weight of unlabeled pixels')
 parser.add_argument('--mask_ratio', type=float, default=2/3, help='ratio of mask/image')
 # -- setting of mixup
@@ -550,15 +550,15 @@ def self_train(args, pre_snapshot_path, self_snapshot_path):
 
 if __name__ == "__main__":
     ## make logger file
-    pre_snapshot_path = "/home/vigil/Desktop/BCP-main/model/BCP/LA_{}_{}_labeled/pre_train".format(args.exp, args.labelnum)
-    self_snapshot_path = "/home/vigil/Desktop/BCP-main/model/BCP/LA_{}_{}_labeled/self_train".format(args.exp, args.labelnum)
-    print("Starting BCP training.")
+    pre_snapshot_path = "/home/vigil/Desktop/OMF-main/model/OMF/LA_{}_{}_labeled/pre_train".format(args.exp, args.labelnum)
+    self_snapshot_path = "/home/vigil/Desktop/OMF-main/model/OMF/LA_{}_{}_labeled/self_train".format(args.exp, args.labelnum)
+    print("Starting OMF training.")
     for snapshot_path in [pre_snapshot_path, self_snapshot_path]:
         if not os.path.exists(snapshot_path):
             os.makedirs(snapshot_path)
         if os.path.exists(snapshot_path + '/code'):
             shutil.rmtree(snapshot_path + '/code')
-    shutil.copy('./LA_BCP_train.py', self_snapshot_path)
+    shutil.copy('./LA_OMF_train.py', self_snapshot_path)
     # -- Pre-Training
     logging.basicConfig(filename=pre_snapshot_path+"/log.txt", level=logging.INFO, format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
     logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
