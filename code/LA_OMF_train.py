@@ -461,7 +461,7 @@ def self_train(args, pre_snapshot_path, self_snapshot_path):
                 nib.save(nib.Nifti1Image(unimg_a[0,0,:,:,:].cpu().numpy().astype(np.float32), np.eye(4)), nii_save_path + "%02d_unimga_.nii.gz" % iter_num)
                 nib.save(nib.Nifti1Image(unimg_b[0,0,:,:,:].cpu().numpy().astype(np.float32), np.eye(4)), nii_save_path + "%02d_unimgb_.nii.gz" % iter_num)
                 '''  
-            if iter_num % 200 == 1:       #yuan lai shi 200   
+            if iter_num % 200 == 1:        
                 
                 nib.save(nib.Nifti1Image(mixc_img[0,0,:,:,:].cpu().numpy().astype(np.float32), np.eye(4)), nii_save_path + "%02d_img.nii.gz" % iter_num)
                 nib.save(nib.Nifti1Image(mixc_lab[0,:,:,:].cpu().numpy().astype(np.float32), np.eye(4)), nii_save_path + "%02d_gt.nii.gz" % iter_num)
