@@ -7,8 +7,8 @@ from networks.net_factory import net_factory
 from utils.test_3d_patch import test_all_case
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--root_path', type=str, default='/home/vigil/Desktop/BCP-main/data/byh_data/SSNet_data/LA', help='Name of Experiment')
-parser.add_argument('--exp', type=str,  default='BCP', help='exp_name')
+parser.add_argument('--root_path', type=str, default='/home/vigil/Desktop/OMF-main/data/byh_data/SSNet_data/LA', help='Name of Experiment')
+parser.add_argument('--exp', type=str,  default='OMF', help='exp_name')
 parser.add_argument('--model', type=str,  default='VNet', help='model_name')
 parser.add_argument('--gpu', type=str,  default='0', help='GPU to use')
 parser.add_argument('--detail', type=int,  default=1, help='print metrics for every samples?')
@@ -19,8 +19,8 @@ parser.add_argument('--stage_name',type=str, default='self_train', help='self_tr
 FLAGS = parser.parse_args()
 
 os.environ['CUDA_VISIBLE_DEVICES'] = FLAGS.gpu
-snapshot_path = "../model/BCP/LA_{}_{}_labeled/{}".format(FLAGS.exp, FLAGS.labelnum, FLAGS.stage_name)
-test_save_path = "./model/BCP/LA_{}_{}_labeled/{}_predictions/".format(FLAGS.exp, FLAGS.labelnum, FLAGS.model)
+snapshot_path = "../model/OMF/LA_{}_{}_labeled/{}".format(FLAGS.exp, FLAGS.labelnum, FLAGS.stage_name)
+test_save_path = "./model/OMF/LA_{}_{}_labeled/{}_predictions/".format(FLAGS.exp, FLAGS.labelnum, FLAGS.model)
 num_classes = 2
 
 if not os.path.exists(test_save_path):
