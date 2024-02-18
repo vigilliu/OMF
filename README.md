@@ -28,7 +28,7 @@ python ./code/test_LA.py --exp=OMF_lab16 --labelnum=16 #for LA testing
 ## Results
 <img width="654" alt="截屏2024-01-26 16 45 52" src="https://github.com/vigilliu/OMF/assets/129838909/5bf7713e-3bb2-4064-8800-397e126246e8">
 <img width="890" alt="截屏2024-01-26 16 46 19" src="https://github.com/vigilliu/OMF/assets/129838909/855c96e6-1d1a-47e2-998b-1eb85c0373af">
-<img width="858" alt="截屏2024-02-18 11 04 12" src="https://github.com/vigilliu/OMF/assets/129838909/b515bd7d-f00e-483e-b37f-0c2fd2f1fb10">
+<img width="841" alt="截屏2024-02-18 11 06 35" src="https://github.com/vigilliu/OMF/assets/129838909/0eb2b997-50f7-41ae-bf6a-7df72aab1a94">
 
 ## Acknowledgements
 Our code is largely based on [BCP:Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation]. Thanks for these authors for their valuable work, hope our work can also contribute to related research.
