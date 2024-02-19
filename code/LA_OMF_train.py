@@ -49,12 +49,6 @@ parser.add_argument('--seed', type=int,  default=1337, help='random seed')
 parser.add_argument('--consistency', type=float, default=1.0, help='consistency')
 parser.add_argument('--consistency_rampup', type=float, default=40.0, help='consistency_rampup')
 parser.add_argument('--magnitude', type=float,  default='10.0', help='magnitude')
-# -- setting of OMF
-parser.add_argument('--u_weight', type=float, default=0.5, help='weight of unlabeled pixels')
-parser.add_argument('--mask_ratio', type=float, default=2/3, help='ratio of mask/image')
-# -- setting of mixup
-parser.add_argument('--u_alpha', type=float, default=2.0, help='unlabeled image ratio of mixuped image')
-parser.add_argument('--loss_weight', type=float, default=0.5, help='loss weight of unimage term')
 args = parser.parse_args()
 
 nii_save_path='/home/vigil/Desktop/labelnum16/'
