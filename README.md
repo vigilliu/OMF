@@ -6,7 +6,7 @@ by **************************************.
 Official code for "[Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation](https://arxiv.org/)".
 
 ## Overview of our method
-<img width="1053" alt="截屏2024-01-27 23 18 13" src="https://github.com/vigilliu/OMF/assets/129838909/bb78ecb5-4635-4dc8-9aab-615cf1493677">
+<img width="1056" alt="截屏2024-03-05 14 36 25" src="https://github.com/vigilliu/OMF/assets/129838909/de1ba568-b294-459e-941a-3012605fa6c6">
 
 ## Requirements
 This repository is based on PyTorch 1.8.0, CUDA 11.1 and Python 3.6.13. All experiments in our paper were conducted on NVIDIA GeForce RTX 3090 GPU with an identical experimental setting.
