@@ -1,12 +1,14 @@
 # OMF:Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation
 by **************************************.
-<img width="1483" alt="截屏2024-01-26 16 51 23" src="https://github.com/vigilliu/OMF/assets/129838909/9eacab39-29ae-43af-b0e9-c03b21de8c76">
+<img width="1483" alt="fig1111" src="https://github.com/vigilliu/OMF/assets/129838909/d5cc0555-122c-4f19-8579-f3a3f1049164">
+
 
 ## Introduction
-Official code for "[Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation](https://arxiv.org/)".
+Official code for "[Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation]
 
 ## Overview of our method
-<img width="1056" alt="截屏2024-03-05 14 36 25" src="https://github.com/vigilliu/OMF/assets/129838909/de1ba568-b294-459e-941a-3012605fa6c6">
+<img width="1056" alt="fig111" src="https://github.com/vigilliu/OMF/assets/129838909/a8a466fa-4352-452a-808e-2578040c79a7">
+
 
 ## Requirements
 This repository is based on PyTorch 1.8.0, CUDA 11.1 and Python 3.6.13. All experiments in our paper were conducted on NVIDIA GeForce RTX 3090 GPU with an identical experimental setting.
@@ -26,15 +28,17 @@ python ./code/test_LA.py --exp=OMF_lab8 --labelnum=8 #for LA testing
 python ./code/test_LA.py --exp=OMF_lab16 --labelnum=16 #for LA testing
 ```
 ## Results
-<img width="654" alt="截屏2024-01-26 16 45 52" src="https://github.com/vigilliu/OMF/assets/129838909/5bf7713e-3bb2-4064-8800-397e126246e8">
-<img width="890" alt="截屏2024-01-26 16 46 19" src="https://github.com/vigilliu/OMF/assets/129838909/855c96e6-1d1a-47e2-998b-1eb85c0373af">
-<img width="841" alt="截屏2024-02-18 11 06 35" src="https://github.com/vigilliu/OMF/assets/129838909/0eb2b997-50f7-41ae-bf6a-7df72aab1a94">
+<img width="654" alt="table111" src="https://github.com/vigilliu/OMF/assets/129838909/6141c801-f8d3-4ed0-8035-e221baf24dda">
+
+<img width="890" alt="fig222" src="https://github.com/vigilliu/OMF/assets/129838909/122911df-3f5f-42f7-8804-080408a9f64d">
+
+<img width="841" alt="fig333" src="https://github.com/vigilliu/OMF/assets/129838909/e7bf964f-740e-4229-bf33-9ee96e44ad00">
 
 ## Acknowledgements
 Our code is largely based on [BCP:Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation]. Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
 ## Questions
-If you have any questions, welcome contact me at '.edu.cn'
+If you have any questions,***********
 
 
 
