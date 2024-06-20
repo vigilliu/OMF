@@ -1,5 +1,5 @@
-# OMF:Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation
-by **************************************.
+# OMF:Overlay Mantle-Free for Semi-Supervised Medical Image Segmentation(MICCAI2024)
+by Jiacheng Liu, Wenhua Qian, Jinde Cao, and Peng Liu.
 <img width="1483" alt="fig1111" src="https://github.com/vigilliu/OMF/assets/129838909/d5cc0555-122c-4f19-8579-f3a3f1049164">
 
 
@@ -37,8 +37,11 @@ python ./code/test_LA.py --exp=OMF_lab16 --labelnum=16 #for LA testing
 ## Acknowledgements
 Our code is largely based on [BCP:Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation]. Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
+## Citation
+If OMF is useful for your research, please consider citing:)
+
 ## Questions
-If you have any questions,***********
+If you have any questions,Please contact: liujiacheng@stu.ynu.edu.cn
 
 
 
