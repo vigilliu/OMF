@@ -18,8 +18,8 @@ Data could be got at [LA](https://github.com/yulequan/UA-MT/tree/master/data).
 
 To train a model,
 ```
-python ./code/LA_BCP_train.py --exp=OMF_lab8 --base_lr=0.1 --labelnum=8  #for LA training 8:72
-python ./code/LA_BCP_train.py --exp=OMF_lab16 --base_lr=0.1 --labelnum=16  #for LA training 16:64
+python ./code/LA_OMF_train.py --exp=OMF_lab8 --base_lr=0.1 --labelnum=8  #for LA training 8:72
+python ./code/LA_OMF_train.py --exp=OMF_lab16 --base_lr=0.1 --labelnum=16  #for LA training 16:64
 ``` 
 
 To test a model,
